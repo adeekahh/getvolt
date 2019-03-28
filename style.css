@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.landing-screen-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.landing-screen-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.landing-phone-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  filter: none;
+}
+
+.landing-phone-image {
+  width: 150%;
+
+  margin-bottom: -320px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: -75px;
+}
+
+.landing-text-container {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 320px;
+  margin-bottom: 720px;
+}
+
+.landing-header,
+.landing-subheader {
+  width: 75%;
+}
