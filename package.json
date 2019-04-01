@@ -1,0 +1,14 @@
+{
+  "name": "volt-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Villalobos",
+  "license": "ISC",
+  "dependencies": {
+    "lax.js": "^1.2.0"
+  }
+}
