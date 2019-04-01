@@ -126,6 +126,22 @@ var _lax = _interopRequireDefault(require("lax.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function progressBar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = winScroll / height * 100;
+  document.querySelector(".battery-level").style.height = scrolled + "%";
+  console.log(scrolled);
+
+  if (scrolled > 25 && scrolled < 75) {
+    document.querySelector(".battery-level").style.backgroundColor = "orange";
+  } else if (scrolled > 75) {
+    document.querySelector(".battery-level").style.backgroundColor = "green";
+  } else {
+    document.querySelector(".battery-level").style.backgroundColor = "red";
+  }
+}
+
 window.onload = function () {
   _lax.default.setup(); // init
 
@@ -142,22 +158,6 @@ window.onload = function () {
 window.onscroll = function () {
   progressBar();
 };
-
-function progressBar() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = winScroll / height * 100;
-  document.querySelector(".battery-level").style.height = scrolled + "%";
-  console.log(scrolled);
-
-  if (scrolled > 25 && scrolled < 75) {
-    document.querySelector(".battery-level").style.backgroundColor = "orange";
-  } else if (scrolled > 75) {
-    document.querySelector(".battery-level").style.backgroundColor = "green";
-  } else {
-    document.querySelector(".battery-level").style.backgroundColor = "red";
-  }
-}
 },{"lax.js":"node_modules/lax.js/lib/lax.min.js"}],"../../../../../../../Users/adeekah/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

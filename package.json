@@ -1,14 +1,19 @@
 {
   "name": "volt-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Volt",
   "main": "main.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "parcel build index.html"
   },
   "author": "Villalobos",
   "license": "ISC",
   "dependencies": {
     "lax.js": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adeekahh/getvolt.git"
   }
 }
